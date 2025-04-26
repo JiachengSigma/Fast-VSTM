@@ -1,0 +1,14 @@
+model:
+  teacher_checkpoint: "Rostlab/prot_bert"
+  student_hidden_dim: 768
+  migrate_components: ["Q", "K"]  
+  
+training:
+  temperature: 3.0               
+  alpha: 0.7                     
+  batch_size: 32
+  epochs: 50
+  
+optimizer:
+  lr: 2e-5
+  weight_decay: 0.01

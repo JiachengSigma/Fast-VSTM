@@ -1,0 +1,21 @@
+# 模型架构配置
+model:
+  base_model: "Rostlab/prot_bert"
+  method: "svd_0.3"  # 可选[full/lora_8/svd_0.2/bitfit/...]
+  target_layers: "encoder.layer.[0-9]+.attention"
+  svd_reg: 0.01      # SVD正则化系数
+
+# 训练超参数
+training:
+  device: "cuda:0"
+  epochs: 10
+  batch_size: 32
+  grad_clip: 1.0      # 梯度裁剪阈值
+  lr: 1e-5
+  optimizer: "adamw"   # [adamw/sgd]
+
+# 数据路径
+paths:
+  train_data: "data/protein_train.csv"
+  val_data: "data/protein_val.csv"
+  output_dir: "results/"
