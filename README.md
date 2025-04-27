@@ -1,6 +1,6 @@
 # Fast-VSTM (Multi-level model acceleration of drug-target interaction prediction)
 
-![ConPLex Schematic](assets/images/Fast-VSTM.png)
+![Fast-VSTM Schematic](../ConPLex/assets/images/Fast-VSTM.png)
 
 ## Abstract
     The fast and accurate computational prediction of drug-target interactions (DTIs) is crucial for accelerating 
