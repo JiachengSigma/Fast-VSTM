@@ -117,7 +117,7 @@ python train.py \
     --margin-max 0.25 \
     --margin-t0 10
 ```
-You can also conduct training through the following translation. Before the training, you need to edit the YAML file.
+You can also conduct the training in the following way. Before the training, you need to edit the corresponding YAML file.
 
 
 ```bash
